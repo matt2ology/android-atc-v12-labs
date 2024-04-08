@@ -9,18 +9,19 @@ In the lab it starts with creating the app user interface
 2. Select `Empty Activity`, and click **Next**
 3. Type Lab05 for the project name, and click **Finish**
 
-## Step 4
+## Step 4: Add plugin `kotlin-android-extensions` (Deprecated)
 
-4. It then prompts that:
-   > You must be sure that `build.gardle` (Module:Lab05) file has the
-   > following Kotlin plugin:
-   >
-   > > id 'kotlin-android-extensions'
+It then prompts that:
 
-However, in modern Android development, the `kotlin-android-extensions` plugin
-has been deprecated and is no longer recommended for use. This plugin was
-commonly used to enable Kotlin synthetic properties, which allowed for easy
-access to views in XML layouts.
+> You must be sure that `build.gardle` (Module:Lab05) file has the
+> following Kotlin plugin:
+>
+> > id 'kotlin-android-extensions'
+
+However, in modern Android development, the `kotlin-android-extensions`
+**plugin has been deprecated** and is no longer recommended for use.
+This plugin was commonly used to enable Kotlin synthetic properties, which
+allowed for easy access to views in XML layouts.
 
 Instead of using `kotlin-android-extensions`, the recommended approach is to
 use **View Binding** or **Jetpack Compose**. Here's how you can achieve similar
@@ -32,7 +33,7 @@ performance compared to Kotlin synthetic properties provided by
 alternatives for better maintainability and efficiency in modern Android
 development.
 
-### View Binding
+### View Binding (traditional Android development)
 
 View Binding generates a binding class for each XML layout file present in your
 project. This binding class allows you to access all the views in the layout
@@ -62,7 +63,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 
-### Jetpack Compose
+### Jetpack Compose (modern Android UI development)
 
 Jetpack Compose is a modern UI toolkit for building native Android UIs entirely
 in Kotlin. It uses a declarative approach to define UI components.
@@ -92,7 +93,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-## Step 5
+## Step 5: Design app user interface
 
 To start designing your app user interface, you should begin with
 `activity_main.xml` file. Navigate to
@@ -104,7 +105,7 @@ create composable functions that describe their UI components and their behavior
 There's no need to work with XML layout files like `activity_main.xml`.
 Instead, one would write your UI directly in Kotlin code.
 
-## Step 6
+## Step 6: Delete default text
 
 **Delete “Hello World”** text from the center of this activity layout
 
@@ -128,7 +129,7 @@ fun GreetingPreview() {
 }
 ```
 
-## Step 7
+## Step 7: Add app title
 
 In past with **traditional Android development** Android Studio had a layout
 editor where it had a What You See Is What You Get (WYSIWYG) visual designer.
