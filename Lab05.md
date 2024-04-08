@@ -128,3 +128,53 @@ fun GreetingPreview() {
 }
 ```
 
+## Step 7
+
+In past with **traditional Android development** Android Studio had a layout
+editor where it had a What You See Is What You Get (WYSIWYG) visual designer.
+That is Android Studio provide a visual drag-and-drop designer like the
+traditional XML-based layout editor for View-based UI.
+
+Now, in modern Android UI development using **Jetpack Compose** Android Studio
+does provide a Preview feature for Compose UI, which allows you to see a
+real-time preview of your UI as you write your code.
+
+The absence of a visual designer for Jetpack Compose is intentional, as Compose
+encourages a different approach to UI development where UI components are built
+programmatically rather than through XML layout files. This approach offers
+greater flexibility and is more conducive to modern UI development practices.
+
+Add the line `TitleText("Android Pizza Shop")` to where `Greeting("Android")`
+and add the following:
+
+Add these imports
+
+```kotlin
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.sp
+```
+
+And the following blocks of code:
+
+```kotlin
+@Composable // Composable function for displaying text in the UI (Jetpack Compose)
+fun TitleText(text: String) {
+    Text(
+        text = text, // Text to be displayed in the UI
+        fontSize = 34.sp, // Text size in scale-independent pixels
+        fontWeight = FontWeight.Bold, // Text weight (bold)
+        textAlign = TextAlign.Center, // Text alignment (center)
+        modifier = Modifier.fillMaxSize() // Fill the container with the content
+    )
+}
+
+@Preview(showBackground = true) // Preview the UI with a background color (Jetpack Compose)
+@Composable // Composable function for previewing the UI in the IDE (Jetpack Compose)
+fun TitleTextPreview(){
+    Lab05_api33Theme {
+        // Preview using TitleText composable
+        TitleText("Android Pizza Shop")
+    }
+}
+```
