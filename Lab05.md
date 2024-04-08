@@ -165,8 +165,10 @@ fun TitleText(text: String) {
         text = text, // Text to be displayed in the UI
         fontSize = 34.sp, // Text size in scale-independent pixels
         fontWeight = FontWeight.Bold, // Text weight (bold)
-        textAlign = TextAlign.Center, // Text alignment (center)
-        modifier = Modifier.fillMaxSize() // Fill the container with the content
+        // center text on screen
+        textAlign = TextAlign.Center,
+        // Add padding around the text and fill the container with the text
+        modifier = Modifier.padding(25.dp)
     )
 }
 
@@ -176,6 +178,66 @@ fun TitleTextPreview(){
     Lab05_api33Theme {
         // Preview using TitleText composable
         TitleText("Android Pizza Shop")
+    }
+}
+```
+
+## Step 8: Add pizza image
+
+Place your image file in the appropriate directory within the res folder
+(e.g., res/drawable for image resources): ![app/src/main/res/drawable/pizza](Lab05_api33/app/src/main/res/drawable/pizza.png)
+
+Import the necessary classes and functions:
+
+```kotlin
+import androidx.compose.ui.unit.dp // Density-independent pixels
+import androidx.compose.foundation.Image // Displaying images in the UI
+import androidx.compose.foundation.layout.padding // Adding padding for spacing
+import androidx.compose.foundation.layout.size // Setting the size of the image
+import androidx.compose.ui.res.painterResource // Loading images from resources
+import androidx.compose.ui.Alignment // Aligning elements in the UI
+```
+
+Inside your Composable function (e.g., MainActivity), use the Image composable
+to load the image:
+
+```kotlin
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            Lab05_api33Theme {
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    Column( // Column layout container to stacking elements vertically
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        TitleText("Android Pizza Shop")
+                        DisplayImage(R.drawable.pizza)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun DisplayImage(imageResourceId: Int) {
+    Image(
+        painter = painterResource(id = imageResourceId),
+        contentDescription = null,
+        modifier = Modifier.fillMaxSize()
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DisplayImagePreview() {
+    Lab05_api33Theme {
+        // Preview the DisplayImage composable with a sample image resource ID
+        DisplayImage(R.drawable.your_sample_image)
     }
 }
 ```
