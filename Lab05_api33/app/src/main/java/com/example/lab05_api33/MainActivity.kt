@@ -1,18 +1,18 @@
 package com.example.lab05_api33
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.sp
+import android.os.Bundle // For saving the activity state (Android)
+import androidx.activity.ComponentActivity // For creating a screen (Android) 
+import androidx.activity.compose.setContent // Setting the content of the activity (Jetpack Compose)
+import androidx.compose.foundation.layout.fillMaxSize // Filling the container with the content (Jetpack Compose)
+import androidx.compose.material3.MaterialTheme // Defining the color scheme of the UI (Jetpack Compose)
+import androidx.compose.material3.Surface // Defining the background color of the UI (Jetpack Compose)
+import androidx.compose.material3.Text // Displaying text in the UI (Jetpack Compose)
+import androidx.compose.runtime.Composable // Defining composables (Jetpack Compose)
+import androidx.compose.ui.Modifier // Layout container (Jetpack Compose)
+import androidx.compose.ui.text.font.FontWeight // Text weight (Jetpack Compose)
+import androidx.compose.ui.text.style.TextAlign // Text alignment (Jetpack Compose)
+import androidx.compose.ui.tooling.preview.Preview // Previewing the UI in the IDE (Jetpack Compose)
+import androidx.compose.ui.unit.sp // Text size (scale-independent pixels)
 import com.example.lab05_api33.ui.theme.Lab05_api33Theme
 
 class MainActivity : ComponentActivity() {
