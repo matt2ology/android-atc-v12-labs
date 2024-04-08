@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize // Filling the container w
 import androidx.compose.material3.MaterialTheme // Defining the color scheme of the UI (Jetpack Compose)
 import androidx.compose.material3.Surface // Defining the background color of the UI (Jetpack Compose)
 import androidx.compose.material3.Text // Displaying text in the UI (Jetpack Compose)
-import androidx.compose.runtime.Composable // Defining composables (Jetpack Compose)
+import androidx.compose.runtime.Composable // Defining composable (Jetpack Compose)
 import androidx.compose.ui.Modifier // Layout container (Jetpack Compose)
 import androidx.compose.ui.text.font.FontWeight // Text weight (Jetpack Compose)
 import androidx.compose.ui.text.style.TextAlign // Text alignment (Jetpack Compose)
