@@ -40,7 +40,7 @@ For certification that has more value, compared to "*Android* ATC"
 - [Lab 4 - "Simple Calculator" Application](Lab01)
   - Create your first Android application
   - Build a “SimpleCalculator” Application
-- [Lab 5 - "Pizza Order" Application](Lab05_api33)
+- [Lab 5 - "Pizza Order" Application](Lab05.md)
   - Create Your App User Interface
   - Configure the Android App Code
   - Run Your App
