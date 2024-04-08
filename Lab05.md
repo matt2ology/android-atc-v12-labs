@@ -103,3 +103,28 @@ files (such as `activity_main.xml`); and, so in **Jetpack Compose**, one would
 create composable functions that describe their UI components and their behavior.
 There's no need to work with XML layout files like `activity_main.xml`.
 Instead, one would write your UI directly in Kotlin code.
+
+## Step 6
+
+**Delete “Hello World”** text from the center of this activity layout
+
+Delete line `Greeting("Android")` and the following blocks of code
+
+```kotlin
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    Lab05_api33Theme {
+        Greeting("Android")
+    }
+}
+```
+
