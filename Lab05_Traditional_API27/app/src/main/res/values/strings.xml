@@ -12,4 +12,5 @@
     <string name="generic_image_of_combination_pizza">Generic image of combination pizza</string>
     <string name="medium_7">Medium ($7)</string>
     <string name="small_5">Small ($5)</string>
+    <string name="total_order_price">Total Order Price= $%1$d</string>
 </resources>
