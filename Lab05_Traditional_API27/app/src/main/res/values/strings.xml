@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Lab05_Traditional_API27</string>
+    <string name="prompt_to_choose_your_pizza_size">Prompt to choose Your Pizza Size:</string>
+    <string name="choose_your_pizza_size">Choose Your Pizza Size:</string>
+    <string name="android_pizza_shop">Android Pizza Shop</string>
+    <string name="onions_1">Onions ($1)</string>
+    <string name="olives_2">Olives ($2)</string>
+    <string name="tomatoes_3">Tomatoes ($3)</string>
+    <string name="place_your_order">Place Your Order</string>
+    <string name="choose_your_toppings">Choose Your Toppings:</string>
+    <string name="large_9">Large ($9)</string>
+    <string name="generic_image_of_combination_pizza">Generic image of combination pizza</string>
+    <string name="medium_7">Medium ($7)</string>
+    <string name="small_5">Small ($5)</string>
 </resources>
