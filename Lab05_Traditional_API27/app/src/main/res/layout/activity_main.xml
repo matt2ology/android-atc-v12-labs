@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/promptAndroidPizzaShop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:contentDescription="@string/android_pizza_shop"
+            android:ems="0"
+            android:inputType="text"
+            android:text="@string/android_pizza_shop"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/generic_image_of_combination_pizza"
+            android:src="@drawable/pizza" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/promptChoosePizzaSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/choose_your_pizza_size"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/choose_your_pizza_size"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/smallpizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/small_5" />
+
+            <RadioButton
+                android:id="@+id/mediumpizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medium_7" />
+
+            <RadioButton
+                android:id="@+id/largepizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/large_9" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="816dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/choose_your_toppings"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/OnionsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/onions_1" />
+
+            <CheckBox
+                android:id="@+id/OlivesCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/olives_2" />
+
+            <CheckBox
+                android:id="@+id/TomatoesCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tomatoes_3" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/orderbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/place_your_order" />
+
+        <TextView
+            android:id="@+id/Totalprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
