@@ -55,18 +55,21 @@
                 android:id="@+id/smallpizza"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onPlaceOrderButtonClicked"
                 android:text="@string/small_5" />
 
             <RadioButton
                 android:id="@+id/mediumpizza"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onPlaceOrderButtonClicked"
                 android:text="@string/medium_7" />
 
             <RadioButton
                 android:id="@+id/largepizza"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onPlaceOrderButtonClicked"
                 android:text="@string/large_9" />
 
         </RadioGroup>
@@ -88,6 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onPlaceOrderButtonClicked"
                 android:text="@string/onions_1" />
 
             <CheckBox
@@ -95,6 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onPlaceOrderButtonClicked"
                 android:text="@string/olives_2" />
 
             <CheckBox
@@ -102,6 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onPlaceOrderButtonClicked"
                 android:text="@string/tomatoes_3" />
         </LinearLayout>
 
